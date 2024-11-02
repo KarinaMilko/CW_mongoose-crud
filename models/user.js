@@ -58,14 +58,14 @@ const userSchema = new mongoose.Schema(
 
 const User = mongoose.model('User', userSchema);
 
-User.create({
-  firstName: 'Asdfg',
-  lastName: 'Qwert',
-  email: 'qwerty@qwerty',
-  birthday: '2020-10-10',
-  workExperience: 1,
-})
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
+// User.create({
+//   firstName: 'Asdfg',
+//   lastName: 'Qwert',
+//   email: 'qwerty@qwerty',
+//   birthday: '2020-10-10',
+//   workExperience: 1,
+// })
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err));
 
 module.exports = User;

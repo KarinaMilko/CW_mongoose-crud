@@ -13,8 +13,8 @@ const mongoose = require('mongoose');
     // CRUD
     // C - INSERT - insertOne/Many - create (save) /insertMany
     const newTask = { body: 'Go for a walk' };
-    // const createdTask = await Task.create(newTask);
-    // console.log(createdTask);
+    const createdTask = await Task.create(newTask);
+    console.log(createdTask);
 
     // R - SELECT - find - find...
     const foundTasks = await Task.find();
